@@ -11,6 +11,7 @@ makeCacheMatrix <- function(m=matrix()) {
   else
   {
   m1 <<- NULL
+  # inverse the matrix and return the value
   m1 <<- solve(t(m) %*% m)
   return(m1)
   }
